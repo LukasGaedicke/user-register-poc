@@ -1,16 +1,30 @@
-# user_registration
+# User Registration App
+Este é um exemplo de aplicativo Flutter para realizar cadastro e login de usuários. O aplicativo permite que os usuários se cadastrem fornecendo nome, sobrenome, e-mail, senha e nível de acesso. Ele também permite que os usuários façam login usando suas credenciais.
 
-A new Flutter project.
+## Arquitetura
+Este aplicativo segue a arquitetura Clean Architecture, que promove a separação de preocupações e a modularidade do código e também utiliza a biblioteca flutter_bloc para implementar a gerência de estado com BLoC (Business Logic Component), facilitando a separação entre a lógica de negócios e a interface do usuário.
 
-## Getting Started
+## Instruções de Uso
+### Pré-requisitos:
 
-This project is a starting point for a Flutter application.
+* Certifique-se de ter o Flutter instalado no seu ambiente de desenvolvimento. Para obter mais informações sobre como instalar o Flutter, consulte a documentação oficial do Flutter.
+* Este projeto utiliza o Firestore e o Firebase Auth. Você precisa configurar um projeto Firebase e adicionar suas credenciais ao arquivo **firebase_options.dart** no diretório **/lib**.
 
-A few resources to get you started if this is your first Flutter project:
+#### Instalar Dependências:
+Navegue até o diretório do projeto e execute o seguinte comando para instalar as dependências:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+cd user-registration-app
+flutter pub get
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Executar o Aplicativo:
+Execute o aplicativo em um emulador ou dispositivo conectado usando o seguinte comando:
+
+```
+flutter run
+```
+
+#### Explorar o Aplicativo:
+Explore as funcionalidades do aplicativo, incluindo o cadastro de novos usuários e o login usando as credenciais fornecidas durante o cadastro.
+
